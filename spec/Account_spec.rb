@@ -1,7 +1,8 @@
 require 'spec_helper'
 
 describe "Account" do
-  account = Account.new
+  account = Account.new(Transactions.new)
+
   it "has a balace of 0.00" do
     expect(account.balance).to be(0.00)
   end
