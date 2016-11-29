@@ -1,5 +1,6 @@
 require_relative '../lib/Account'
 require_relative '../lib/Transactions'
+require_relative '../lib/Printer'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|

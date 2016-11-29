@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "Transactions" do
+describe Transactions do
   transactions = Transactions.new
   time = Time.now.strftime("%d/%m/%y")
   balance = 10
@@ -11,7 +11,9 @@ describe "Transactions" do
   end
   it "should record the type and value of transaction" do
     transactions.activity('type', deposit, balance)
-    expect(transactions.log).to include([time, 'type', deposit, balance])
+    expect(transactions.log).to include({:date => time,
+                                         :type => 'type',
+                                         :value => deposit,
+                                         :balance => balance})
   end
-
 end

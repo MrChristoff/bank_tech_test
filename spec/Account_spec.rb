@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "Account" do
+describe Account do
   account = Account.new(Transactions.new)
 
   it "has a balace of 0.00" do
