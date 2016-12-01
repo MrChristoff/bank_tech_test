@@ -12,12 +12,12 @@ class Account
   end
 
   def deposit value
-    @balance = @balance + value
+    @balance += value
     @activityLog.activity('deposit', value, @balance)
   end
 
   def debit value
-    @balance = @balance - value
+    @balance -= value
     @activityLog.activity('debit', value, @balance)
   end
 

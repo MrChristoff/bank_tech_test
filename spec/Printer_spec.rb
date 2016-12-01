@@ -5,7 +5,7 @@ describe Printer do
   printer = Printer.new(account)
 
   it "prints a headder" do
-    expect { (printer.headder) }.to output("date       || credit || debit   || balance").to_stdout
+    expect { (printer.headder) }.to output("date       || credit || debit   || balance\n").to_stdout
   end
 
 end

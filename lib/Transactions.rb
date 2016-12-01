@@ -14,7 +14,11 @@ class Transactions
             }
   end
 
+  def time
+    Time.now
+  end
+
   def date
-    Time.now.strftime("%d/%m/%y")
+    time.strftime("%d/%m/%Y")
   end
 end

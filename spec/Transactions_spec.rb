@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Transactions do
   transactions = Transactions.new
-  time = Time.now.strftime("%d/%m/%y")
+  time = Time.now.strftime("%d/%m/%Y")
   balance = 10
   deposit = 10
 
